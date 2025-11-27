@@ -1,0 +1,6 @@
+.venv
+debug_images
+dulcet-analyst-477603-e1-a81eba5b4f67.json
+.env
+*.pyc
+__pycache__
