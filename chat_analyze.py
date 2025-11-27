@@ -54,7 +54,7 @@ def convert_dialogue(json_list):
 
 
 def main():
-    test_img = "piyan.png"  # 你可以換成你的聊天截圖
+    test_img = "chat.webp"  # 你可以換成你的聊天截圖
     if os.path.exists(test_img):
         print("📷 開始 OCR 辨識...")
         dialogue = detect_chat_structure(test_img)

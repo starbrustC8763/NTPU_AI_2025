@@ -2,6 +2,9 @@ import os
 from google.cloud import vision
 import google.auth.exceptions
 import io
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def verify_google_vision_key(image_path=None):
     print("🔍 開始檢查 Google Vision API 設定...\n")
@@ -43,5 +46,5 @@ def verify_google_vision_key(image_path=None):
         print(f"❌ 發生例外錯誤：{e}")
 
 if __name__ == "__main__":
-    image_path = "example_chat.jpg"
+    image_path = "chat.webp"
     verify_google_vision_key(image_path)

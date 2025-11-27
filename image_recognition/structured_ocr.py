@@ -78,7 +78,7 @@ def detect_chat_structure(image_path: str, threshold_ratio: float = 0.5) -> List
 
 def main():
     # 測試範例
-    test_img = "piyan.png"  # 你可以換成你的聊天截圖
+    test_img = "chat.webp"  # 你可以換成你的聊天截圖
     if os.path.exists(test_img):
         print("📷 開始 OCR 辨識...")
         dialogues = detect_chat_structure(test_img)
@@ -88,4 +88,4 @@ def main():
         print(json.dumps(dialogues, ensure_ascii=False, indent=2))
     else:
         print(f"⚠️ 找不到測試圖片:{test_img}")
-main()
+#main()
