@@ -13,9 +13,29 @@ genai.configure(api_key=api_key)
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 def analyze_message(text):
-    prompt = f"""
-    請分析以下訊息的語氣、情緒與意圖:
-    訊息: "{text}"
+    prompt = f"""你是一位專業的對話分析師與伴侶諮商師。
+    請按照以下格式回覆（去除所有Markdown語法）：
+    一、語氣 (Tone)
+    - 列出對話中觀察到的語氣特點
+    - 例如：
+        - 用詞
+        - 語調
+
+    二、情緒 (Emotion)  
+    - 分析雙方的情緒狀態
+    - 例如：
+        - 用詞
+        - 語調
+        - 感情色彩
+
+    三、意圖 (Intention)
+    - 分析雙方各自的目的
+
+    總結
+    - 用一段話總結整體對話特性，以及雙方的感情狀況
+    ======
+    請分析以下聊天記錄：
+    {text}
     """
     message = model.generate_content(prompt)
     return message

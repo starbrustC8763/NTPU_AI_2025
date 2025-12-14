@@ -1,0 +1,412 @@
+[
+    {
+    "text": "太好了,妳終於來了",
+    "season": 1,
+    "episode": 1,
+    "frame_start": 772,
+    "frame_prefer": 796,
+    "frame_end": 821,
+    "segment_id": 1,
+    "character": 601
+  },
+  {
+    "text": "妳沒有來學校上課",
+    "season": 1,
+    "episode": 1,
+    "frame_start": 882,
+    "frame_prefer": 900,
+    "frame_end": 919,
+    "segment_id": 3,
+    "character": 601
+  },
+  {
+    "text": "傳訊息也都沒有回",
+    "season": 1,
+    "episode": 1,
+    "frame_start": 919,
+    "frame_prefer": 942,
+    "frame_end": 965,
+    "segment_id": 4,
+    "character": 601
+  },
+  {
+    "text": "我今天是來講一件事的",
+    "season": 1,
+    "episode": 1,
+    "frame_start": 1006,
+    "frame_prefer": 1030,
+    "frame_end": 1054,
+    "segment_id": 5,
+    "character": 601
+  },
+  {
+    "text": "為什麼? 發生什麼事了嗎",
+    "season": 1,
+    "episode": 1,
+    "frame_start": 1474,
+    "frame_prefer": 1502,
+    "frame_end": 1530,
+    "segment_id": 8,
+    "character": 601
+  },
+  {
+    "text": "是我自己的問題",
+    "season": 1,
+    "episode": 1,
+    "frame_start": 1727,
+    "frame_prefer": 1752,
+    "frame_end": 1777,
+    "segment_id": 12,
+    "character": 601
+  },
+  {
+    "text": "為什麼?",
+    "season": 1,
+    "episode": 1,
+    "frame_start": 1819,
+    "frame_prefer": 1825,
+    "frame_end": 1853,
+    "segment_id": 13,
+    "character": 601
+  },
+  {
+    "text": "那傢伙竟然敢無視燈",
+    "season": 1,
+    "episode": 9,
+    "frame_start": 19768,
+    "frame_prefer": 19800,
+    "frame_end": 19832,
+    "segment_id": 2964,
+    "character": 32768
+  },
+  {
+    "text": "收入實在太少了",
+    "season": 2,
+    "episode": 1,
+    "frame_start": 20477,
+    "frame_prefer": 20507,
+    "frame_end": 20537,
+    "segment_id": 4801,
+    "character": 32768
+  },
+  {
+    "text": "是又怎樣",
+    "season": 1,
+    "episode": 2,
+    "frame_start": 265,
+    "frame_prefer": 275,
+    "frame_end": 293,
+    "segment_id": 407,
+    "character": 18
+  },
+  {
+    "text": "因為春日影是一首好歌",
+    "season": 1,
+    "episode": 4,
+    "frame_start": 179,
+    "frame_prefer": 211,
+    "frame_end": 244,
+    "segment_id": 1166,
+    "character": 32768
+  },
+  {
+    "text": "為什麼要演奏春日影!",
+    "season": 1,
+    "episode": 7,
+    "frame_start": 30116,
+    "frame_prefer": 30142,
+    "frame_end": 30169,
+    "segment_id": 2447,
+    "character": 32768
+  },
+  {
+    "text": "從來不覺得玩樂團開心過",
+    "season": 1,
+    "episode": 1,
+    "frame_start": 3652,
+    "frame_prefer": 3720,
+    "frame_end": 3788,
+    "segment_id": 42,
+    "character": 601
+  },
+  {
+    "text": "只要是我能做的,我什麼都願意做",
+    "season": 1,
+    "episode": 8,
+    "frame_start": 30095,
+    "frame_prefer": 30126,
+    "frame_end": 30158,
+    "segment_id": 2760,
+    "character": 32768
+  },
+  {
+    "text": "現在正是復權的時刻",
+    "season": 1,
+    "episode": 13,
+    "frame_start": 25168,
+    "frame_prefer": 25195,
+    "frame_end": 25222,
+    "segment_id": 4471,
+    "character": 32768
+  },
+  {
+    "text": "也就是復活",
+    "season": 1,
+    "episode": 13,
+    "frame_start": 25134,
+    "frame_prefer": 25151,
+    "frame_end": 25168,
+    "segment_id": 4470,
+    "character": 32768
+  },
+  {
+    "text": "謝謝妳",
+    "season": 1,
+    "episode": 2,
+    "frame_start": 10581,
+    "frame_prefer": 10599,
+    "frame_end": 10617,
+    "segment_id": 539,
+    "character": 10
+  },
+  {
+    "text": "有推薦的飲料嗎",
+    "season": 1,
+    "episode": 2,
+    "frame_start": 10654,
+    "frame_prefer": 10674,
+    "frame_end": 10694,
+    "segment_id": 540,
+    "character": 10
+  },
+  {
+    "text": "味道醇香,我很喜歡",
+    "season": 1,
+    "episode": 2,
+    "frame_start": 10733,
+    "frame_prefer": 10757,
+    "frame_end": 10781,
+    "segment_id": 542,
+    "character": 10
+  },
+  {
+    "text": "可以告訴我妳的名字嗎",
+    "season": 1,
+    "episode": 2,
+    "frame_start": 11264,
+    "frame_prefer": 11295,
+    "frame_end": 11317,
+    "segment_id": 550,
+    "character": 10
+  },
+  {
+    "text": "我沒有那麼厲害啦",
+    "season": 1,
+    "episode": 5,
+    "frame_start": 25235,
+    "frame_prefer": 25256,
+    "frame_end": 25277,
+    "segment_id": 1764,
+    "character": 32768
+  },
+  {
+    "text": "我愛慕虛榮啦",
+    "season": 1,
+    "episode": 10,
+    "frame_start": 20171,
+    "frame_prefer": 20188,
+    "frame_end": 20205,
+    "segment_id": 3317,
+    "character": 32768
+  },
+  {
+    "text": "一點生活感也沒有",
+    "season": 1,
+    "episode": 10,
+    "frame_start": 22462,
+    "frame_prefer": 22484,
+    "frame_end": 22507,
+    "segment_id": 3331,
+    "character": 32768
+  },
+  {
+    "text": "等一下",
+    "season": 1,
+    "episode": 10,
+    "frame_start": 21594,
+    "frame_prefer": 21607,
+    "frame_end": 21621,
+    "segment_id": 3325,
+    "character": 32768
+  },
+  {
+    "text": "聽說了",
+    "season": 1,
+    "episode": 10,
+    "frame_start": 22897,
+    "frame_prefer": 22912,
+    "frame_end": 22927,
+    "segment_id": 3339,
+    "character": 32768
+  },
+  {
+    "text": "而且挺壞心眼的不是嗎",
+    "season": 1,
+    "episode": 10,
+    "frame_start": 23153,
+    "frame_prefer": 23174,
+    "frame_end": 23195,
+    "segment_id": 3343,
+    "character": 32768
+  },
+  {
+    "text": "什麼意思?",
+    "season": 1,
+    "episode": 10,
+    "frame_start": 23321,
+    "frame_prefer": 23332,
+    "frame_end": 23344,
+    "segment_id": 3347,
+    "character": 32768
+  },
+  {
+    "text": "我還是會繼續下去",
+    "season": 1,
+    "episode": 10,
+    "frame_start": 23502,
+    "frame_prefer": 23519,
+    "frame_end": 23537,
+    "segment_id": 3350,
+    "character": 32768
+  },
+  {
+    "text": "就由我來將它結束掉",
+    "season": 1,
+    "episode": 10,
+    "frame_start": 23860,
+    "frame_prefer": 23884,
+    "frame_end": 23908,
+    "segment_id": 3355,
+    "character": 32768
+  },
+  {
+    "text": "我到底該怎麼做才好?",
+    "season": 1,
+    "episode": 10,
+    "frame_start": 28158,
+    "frame_prefer": 28185,
+    "frame_end": 28213,
+    "segment_id": 3396,
+    "character": 32768
+  },
+  {
+    "text": "我都說討厭了吧",
+    "season": 1,
+    "episode": 11,
+    "frame_start": 22499,
+    "frame_prefer": 22518,
+    "frame_end": 22538,
+    "segment_id": 3678,
+    "character": 32768
+  },
+  {
+    "text": "妳們是什麼時候...",
+    "season": 1,
+    "episode": 11,
+    "frame_start": 22781,
+    "frame_prefer": 22794,
+    "frame_end": 22807,
+    "segment_id": 3686,
+    "character": 32768
+  },
+  {
+    "text": "我想應該不是",
+    "season": 1,
+    "episode": 11,
+    "frame_start": 23970,
+    "frame_prefer": 23987,
+    "frame_end": 24004,
+    "segment_id": 3705,
+    "character": 32768
+  },
+  {
+    "text": "其實我都知道妳在想什麼",
+    "season": 1,
+    "episode": 11,
+    "frame_start": 24294,
+    "frame_prefer": 24331,
+    "frame_end": 24368,
+    "segment_id": 3711,
+    "character": 32768
+  },
+  {
+    "text": "我話說完了",
+    "season": 1,
+    "episode": 11,
+    "frame_start": 24708,
+    "frame_prefer": 24722,
+    "frame_end": 24736,
+    "segment_id": 3716,
+    "character": 32768
+  },
+  {
+    "text": "到底該怎麼辦啊",
+    "season": 1,
+    "episode": 11,
+    "frame_start": 24986,
+    "frame_prefer": 25005,
+    "frame_end": 25025,
+    "segment_id": 3717,
+    "character": 32768
+  },
+  {
+    "text": "我知道啦",
+    "season": 1,
+    "episode": 11,
+    "frame_start": 25105,
+    "frame_prefer": 25119,
+    "frame_end": 25133,
+    "segment_id": 3720,
+    "character": 32768
+  },
+  {
+    "text": "要遲到了喔",
+    "season": 1,
+    "episode": 11,
+    "frame_start": 25280,
+    "frame_prefer": 25292,
+    "frame_end": 25304,
+    "segment_id": 3724,
+    "character": 32768
+  },
+  {
+    "text": "我已經沒辦法再努力了",
+    "season": 2,
+    "episode": 1,
+    "frame_start": 25636,
+    "frame_prefer": 25675,
+    "frame_end": 25714,
+    "segment_id": 4872,
+    "character": 32768
+  },
+  {
+    "text": "幹嘛?",
+    "season": 2,
+    "episode": 1,
+    "frame_start": 25106,
+    "frame_prefer": 25118,
+    "frame_end": 25131,
+    "segment_id": 4864,
+    "character": 32768
+  },
+  {
+    "text": "妳喜歡嗎",
+    "season": 1,
+    "episode": 9,
+    "frame_start": 1175,
+    "frame_prefer": 1190,
+    "frame_end": 1206,
+    "segment_id": 2777,
+    "character": 32768
+  }
+]
