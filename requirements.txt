@@ -1,0 +1,7 @@
+flask
+python-dotenv
+line-bot-sdk
+google-cloud-vision
+git+https://github.com/google/generative-ai-python.git
+requests
+tqdm

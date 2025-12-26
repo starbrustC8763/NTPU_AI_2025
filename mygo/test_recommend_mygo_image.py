@@ -30,18 +30,16 @@ with open(json_path, "r", encoding="utf-8") as f:
     data = json.load(f)
 
 def safe_json_loads(text: str) -> dict:
-    if not text or not text.strip():
-        return {}
+    if not text:
+        raise ValueError("Empty response")
 
-    # 去掉 ```json ``` 或 ```
-    cleaned = re.sub(r"```(?:json)?", "", text).strip("` \n")
+    # 移除 ```json ``` 或 ```
+    text = text.strip()
+    text = re.sub(r"^```(?:json)?", "", text)
+    text = re.sub(r"```$", "", text)
+    text = text.strip()
 
-    try:
-        return json.loads(cleaned)
-    except json.JSONDecodeError:
-        print("⚠️ JSON 解析失敗，原始內容：")
-        print(cleaned)
-        return {}
+    return json.loads(text)
 
 def analyze_tone(text: str) -> dict:
     tag_list = "、".join(TAGS)
@@ -50,9 +48,9 @@ def analyze_tone(text: str) -> dict:
 你是一個「聊天語氣分類器」，不是自由生成模型。
 
 請從【指定標籤清單】中，選出最符合該句話的：
-- 1 個「主要情緒 emotion」
-- 1 個「主要語氣 tone」
-- 1 個「主要意圖 intent」
+- 3個情緒 emotion
+- 3個語氣 tone
+- 3個意圖 intent
 
 【指定標籤清單】
 {tag_list}
@@ -77,11 +75,17 @@ JSON 格式：
 
     try:
         response = model.generate_content(prompt)
-        return response.text or ""
+        print("RAW:", repr(response.text))
+        return safe_json_loads(response.text)
+
     except Exception as e:
         print(f"⚠️ Gemini 呼叫失敗：{e}")
-        return ""
-
+        return {
+            "emotion": "",
+            "tone": "",
+            "intent": "",
+            "confidence": 0.0
+        }
 # === 查詢函式 ===
 def find_image_by_text(text, download=False):
     results = [item for item in data if item.get("text") == text]
@@ -120,14 +124,41 @@ def find_image_by_text(text, download=False):
 
         return image_url  # 回傳第一筆找到的結果
 
-def build_candidates(mygo_data):
-    return [
-        {
-            "text": item["text"],
-            "tones": item.get("tones", [])
-        }
-        for item in mygo_data
-    ]
+def build_candidates(mygo_data, user_text: str):
+    """
+    1. 先分析使用者語氣
+    2. 只挑 tone 有對應的 MyGO text
+    """
+
+    tone_result = analyze_tone(user_text)
+    user_tone = tone_result.get("tone", "")
+
+    if not user_tone:
+        # 如果分析不出 tone，就全部回傳（保底）
+        return [
+            {"text": item["text"], "tones": item.get("tones", [])}
+            for item in mygo_data
+        ]
+
+    candidates = []
+
+    for item in mygo_data:
+        item_tones = item.get("tones", [])
+        if user_tone in item_tones:
+            candidates.append({
+                "text": item["text"],
+                "tones": item_tones
+            })
+
+    # 如果完全沒配對到，也要有 fallback
+    if not candidates:
+        candidates = [
+            {"text": item["text"], "tones": item.get("tones", [])}
+            for item in mygo_data
+        ]
+
+    return candidates
+
 
 
 def select_mygo_reply(user_text, candidates):
@@ -165,7 +196,7 @@ def select_mygo_reply(user_text, candidates):
     return data.get("selected_text", "")
 
 def recommend_mygo_image(user_text,download=False):
-    candidates = build_candidates(data)
+    candidates = build_candidates(data, user_text)
 
     selected_text = select_mygo_reply(user_text, candidates)
 
@@ -181,5 +212,5 @@ def recommend_mygo_image(user_text,download=False):
 
 def main():
     text="哈哈笑死可憐"
-    recommend_mygo_image(text)
+    recommend_mygo_image(text,download=True)
 #main()

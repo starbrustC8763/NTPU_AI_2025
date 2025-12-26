@@ -82,4 +82,4 @@ def main():
         #print(text)
         output = analyze_message(text)
         print(output)
-main()
+#main()

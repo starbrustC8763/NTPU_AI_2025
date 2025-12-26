@@ -8,7 +8,7 @@ sys.path.insert(0, project_root)
 # 引用後端模組（不複製程式碼，後端更改時前端自動同步）
 from image_recognition.structured_ocr import detect_chat_structure
 from AI_response.chat_analyze import analyze_message, convert_dialogue
-from mygo.recommend_mygo_image import recommend_mygo_image
+from mygo.test_recommend_mygo_image import recommend_mygo_image
 
 def process_image(image_path):
     """
